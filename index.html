@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full bg-gray-800 shadow-lg z-50">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <h1 class="text-xl font-bold">My Portfolio</h1>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#about" class="hover:text-gray-400">About</a>
+          <a href="#projects" class="hover:text-gray-400">Projects</a>
+          <a href="#contact" class="hover:text-gray-400">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="h-screen flex items-center justify-center text-center bg-cover bg-center"
+      style="
+        background-image: url('https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1600');
+      "
+    >
+      <div class="bg-black bg-opacity-50 p-10 rounded-lg">
+        <h2 class="text-4xl font-bold">Hello, I'm a Software engineer</h2>
+        <p class="text-lg mt-3">I create beautiful and functional websites.</p>
+        <a
+          href="#projects"
+          class="mt-5 inline-block bg-blue-500 px-6 py-3 rounded hover:bg-blue-600"
+          >View My Work</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 text-center">
+      <h2 class="text-3xl font-bold">About Me</h2>
+      <p class="mt-4 max-w-2xl mx-auto">
+        I am a passionate web developer with experience in modern frameworks and
+        technologies. I specialize in building responsive and dynamic user
+        interfaces using React, Tailwind CSS, and JavaScript.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6">
+      <h2 class="text-3xl font-bold text-center">My Projects</h2>
+      <div class="mt-10 grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-5 rounded-lg">
+          <img
+            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="Project 1"
+            class="w-full rounded"
+          />
+          <h3 class="text-xl font-semibold mt-3">E-Commerce Website</h3>
+          <p class="mt-2">
+            An online store built with React, Redux, and Firebase.
+          </p>
+        </div>
+        <div class="bg-gray-800 p-5 rounded-lg">
+          <img
+            src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="Project 2"
+            class="w-full rounded"
+          />
+          <h3 class="text-xl font-semibold mt-3">Portfolio Website</h3>
+          <p class="mt-2">
+            A personal portfolio built with Tailwind CSS and Next.js.
+          </p>
+        </div>
+        <div class="bg-gray-800 p-5 rounded-lg">
+          <img
+            src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="Project 3"
+            class="w-full rounded"
+          />
+          <h3 class="text-xl font-semibold mt-3">Dashboard App</h3>
+          <p class="mt-2">
+            A responsive admin dashboard using Vue.js and Chart.js.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 text-center bg-gray-800">
+      <h2 class="text-3xl font-bold">Contact Me</h2>
+      <p class="mt-4">Feel free to reach out via social media or email.</p>
+      <div class="mt-6 flex justify-center space-x-6">
+        <a href="#" class="text-gray-300 hover:text-white">Facebook</a>
+        <a href="#" class="text-gray-300 hover:text-white">Twitter</a>
+        <a
+          href="https://www.linkedin.com/in/laniranjohnpaul/"
+          target="_blank"
+          class="text-gray-300 hover:text-white"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/JaypeeLan"
+          target="_blank"
+          class="text-gray-300 hover:text-white"
+          >GitHub</a
+        >
+      </div>
+    </section>
+  </body>
+</html>
